@@ -1,12 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { TextInput, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+  const [value, setValue] = useState("This is the initial content")
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>This is my first mobile application</Text>
+
+      <TextInput onChange = {()=>{setValue("This is the final content")}}
+        style={{height: 40}}
+        placeholder="Type here to translate!"
+        onChangeText={text => setText(text)}
+        defaultValue={text}
+      />
+
+      <Text>{value}</Text>
     </View>
   );
 }
