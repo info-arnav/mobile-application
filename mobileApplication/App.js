@@ -62,7 +62,7 @@ export default function App() {
             ÷
           </Button>
           <Button
-            color="black"
+            color="#ADFF2F"
             onPress={operations}
             title="×"
             style={{ marginBottom: 10 }}>
