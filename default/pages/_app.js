@@ -43,28 +43,28 @@ export default function App() {
             color="#ADFF2F"
            onClick={operations}
             title="+"
-            style={{ marginBottom: 10 }}>
+            style={{ backgroundColor:"ADFF2F",marginBottom: 10 }}>
             +
           </button>
           <button
             color="#ADFF2F"
            onClick={operations}
             title="-"
-            style={{ marginBottom: 10 }}>
+            style={{backgroundColor:"ADFF2F", marginBottom: 10 }}>
             -
           </button>
           <button
             color="#ADFF2F"
            onClick={operations}
             title="÷"
-            style={{ marginBottom: 10 }}>
+            style={{backgroundColor:"ADFF2F", marginBottom: 10 }}>
             ÷
           </button>
           <button
             color="#ADFF2F"
            onClick={operations}
             title="×"
-            style={{ marginBottom: 10 }}>
+            style={{backgroundColor:"ADFF2F", marginBottom: 10 }}>
             ×
           </button>
         </div>
@@ -73,28 +73,28 @@ export default function App() {
             color="black"
            onClick={numberPress}
             title="9"
-            style={{ marginBottom: 10 }}>
+            style={{color:"white", backgroundColor:"bLack", marginBottom: 10 }}>
             9
           </button>
           <button
             color="black"
            onClick={numberPress}
             title="8"
-            style={{ marginBottom: 10 }}>
+            style={{color:"white", backgroundColor:"black", marginBottom: 10 }}>
             8
           </button>
           <button
             color="black"
            onClick={numberPress}
             title="7"
-            style={{ marginBottom: 10 }}>
+            style={{color:"white", backgroundColor:"black", marginBottom: 10 }}>
             7
           </button>
           <button
             color="black"
            onClick={numberPress}
             title="6"
-            style={{ marginBottom: 10 }}>
+            style={{color:"white", backgroundColor:"black", marginBottom: 10 }}>
             6
           </button>
         </div>
@@ -103,28 +103,28 @@ export default function App() {
             color="black"
            onClick={numberPress}
             title="5"
-            style={{ marginBottom: 10 }}>
+            style={{color:"white", backgroundColor:"black", marginBottom: 10 }}>
             5
           </button>
           <button
             color="black"
            onClick={numberPress}
             title="4"
-            style={{ marginBottom: 10 }}>
+            style={{color:"white", backgroundColor:"black", marginBottom: 10 }}>
             4
           </button>
           <button
             color="black"
            onClick={numberPress}
             title="3"
-            style={{ marginBottom: 10 }}>
+            style={{color:"white", backgroundColor:"black", marginBottom: 10 }}>
             3
           </button>
           <button
             color="black"
            onClick={numberPress}
             title="2"
-            style={{ marginBottom: 10 }}>
+            style={{color:"white", backgroundColor:"black", marginBottom: 10 }}>
             2
           </button>
         </div>
@@ -140,14 +140,14 @@ export default function App() {
             color="black"
            onClick={numberPress}
             title="0"
-            style={{ marginBottom: 10 }}>
+            style={{ color:"white",backgroundColor:"black", marginBottom: 10 }}>
             0
           </button>
           <button
             color="gold"
            onClick={result}
             title="="
-            style={{ marginBottom: 10 }}>
+            style={{backgroundColor:"gold", marginBottom: 10 }}>
             =
           </button>
           <button
@@ -156,7 +156,7 @@ export default function App() {
               setScreen('0');
             }}
             title="C"
-            style={{ marginBottom: 10 }}></button>
+            style={{ marginBottom: 10 }}>C</button>
         </div>
       </div>
     </div>
