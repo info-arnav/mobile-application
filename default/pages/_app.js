@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextInput, Button, StyleSheet, Text, View } from 'react-native';
+import { TextInput, button, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   const numberPress = (e) => {
@@ -28,9 +28,9 @@ export default function App() {
   const [operation, setOperation] = useState('');
   const [screen, setScreen] = useState('0');
   return (
-    <View>
+    <div>
       <div style={{ height: '100%', width: '100%' }}>
-        <Text
+        <div
           style={{
             fontSize: 20,
             color: 'black',
@@ -38,128 +38,128 @@ export default function App() {
             width: '100%',
           }}>
           {parseInt(screen)}
-        </Text>
+        </div>
         <div>
-          <Button
+          <button
             color="#ADFF2F"
-            onPress={operations}
+           onClick={operations}
             title="+"
             style={{ marginBottom: 10 }}>
             +
-          </Button>
-          <Button
+          </button>
+          <button
             color="#ADFF2F"
-            onPress={operations}
+           onClick={operations}
             title="-"
             style={{ marginBottom: 10 }}>
             -
-          </Button>
-          <Button
+          </button>
+          <button
             color="#ADFF2F"
-            onPress={operations}
+           onClick={operations}
             title="÷"
             style={{ marginBottom: 10 }}>
             ÷
-          </Button>
-          <Button
+          </button>
+          <button
             color="#ADFF2F"
-            onPress={operations}
+           onClick={operations}
             title="×"
             style={{ marginBottom: 10 }}>
             ×
-          </Button>
+          </button>
         </div>
         <div>
-          <Button
+          <button
             color="black"
-            onPress={numberPress}
+           onClick={numberPress}
             title="9"
             style={{ marginBottom: 10 }}>
             9
-          </Button>
-          <Button
+          </button>
+          <button
             color="black"
-            onPress={numberPress}
+           onClick={numberPress}
             title="8"
             style={{ marginBottom: 10 }}>
             8
-          </Button>
-          <Button
+          </button>
+          <button
             color="black"
-            onPress={numberPress}
+           onClick={numberPress}
             title="7"
             style={{ marginBottom: 10 }}>
             7
-          </Button>
-          <Button
+          </button>
+          <button
             color="black"
-            onPress={numberPress}
+           onClick={numberPress}
             title="6"
             style={{ marginBottom: 10 }}>
             6
-          </Button>
+          </button>
         </div>
         <div>
-          <Button
+          <button
             color="black"
-            onPress={numberPress}
+           onClick={numberPress}
             title="5"
             style={{ marginBottom: 10 }}>
             5
-          </Button>
-          <Button
+          </button>
+          <button
             color="black"
-            onPress={numberPress}
+           onClick={numberPress}
             title="4"
             style={{ marginBottom: 10 }}>
             4
-          </Button>
-          <Button
+          </button>
+          <button
             color="black"
-            onPress={numberPress}
+           onClick={numberPress}
             title="3"
             style={{ marginBottom: 10 }}>
             3
-          </Button>
-          <Button
+          </button>
+          <button
             color="black"
-            onPress={numberPress}
+           onClick={numberPress}
             title="2"
             style={{ marginBottom: 10 }}>
             2
-          </Button>
+          </button>
         </div>
         <div>
-          <Button
+          <button
             color="black"
-            onPress={numberPress}
+           onClick={numberPress}
             title="1"
             style={{ marginBottom: 10 }}>
             1
-          </Button>
-          <Button
+          </button>
+          <button
             color="black"
-            onPress={numberPress}
+           onClick={numberPress}
             title="0"
             style={{ marginBottom: 10 }}>
             0
-          </Button>
-          <Button
+          </button>
+          <button
             color="gold"
-            onPress={result}
+           onClick={result}
             title="="
             style={{ marginBottom: 10 }}>
             =
-          </Button>
-          <Button
+          </button>
+          <button
             color="#00BFFF"
-            onPress={() => {
+           onClick={() => {
               setScreen('0');
             }}
             title="C"
-            style={{ marginBottom: 10 }}></Button>
+            style={{ marginBottom: 10 }}></button>
         </div>
       </div>
-    </View>
+    </div>
   );
 }
