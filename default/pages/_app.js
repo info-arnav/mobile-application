@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { TextInput, button, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   const numberPress = (e) => {
